@@ -118,8 +118,8 @@ The XGBoost classifier predicts cart abandonment from `total_views`, `total_cart
 
 | | |
 |---|---|
-| **A/B test (Chi-Square)** | _add your run's p-value / conversion lift_ |
-| **Model ROC-AUC** | _add your held-out ROC-AUC_ |
+| **A/B test (Chi-Square)** | 8598.7275 |
+| **Model ROC-AUC** | 0.8002 |
 
 SHAP global feature importance | SHAP local explanation (single prediction)
 :---:|:---:
