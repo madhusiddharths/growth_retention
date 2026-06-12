@@ -1,0 +1,23 @@
+# Keep the Docker build context tiny — the Dockerfiles only need api/, app/, models/.
+.git
+.gitignore
+.gcloudignore
+.dockerignore
+venv
+.venv
+env
+data
+plots
+ecommerce_dbt
+observability
+process_data.py
+ab_test.py
+train_model.py
+shap_analysis.py
+*.md
+.claude
+.DS_Store
+__pycache__
+*.pyc
+docker-compose.yml
+deploy.sh
