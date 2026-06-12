@@ -1,0 +1,11 @@
+ecommerce_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: oauth
+      project: gen-lang-client-0874026413
+      dataset: cosmetics_silver
+      threads: 4
+      timeout_seconds: 300
+      location: US

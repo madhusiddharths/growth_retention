@@ -1,0 +1,41 @@
+# ---- The big stuff: NEVER commit these ----
+# Raw + processed Kaggle data (~4.6 GB). Download from Kaggle instead.
+data/
+
+# Python virtual environment
+venv/
+.venv/
+env/
+
+# ---- ML / build artifacts that can be regenerated ----
+# NOTE: plots/ is kept in the repo on purpose (tiny SHAP images, can't be
+# regenerated without the 4.6 GB dataset + BigQuery), so it is NOT ignored.
+drift_report.html
+observability/drift_report.html
+
+# dbt build artifacts
+ecommerce_dbt/target/
+ecommerce_dbt/dbt_packages/
+ecommerce_dbt/logs/
+
+# ---- Secrets / credentials ----
+# GCP service-account keys — never commit. Adjust names to match your files.
+*-credentials.json
+*service-account*.json
+gcp-key*.json
+.env
+*.env
+secrets.toml
+.streamlit/secrets.toml
+
+# ---- Python noise ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# ---- Claude Code local settings (personal, not part of the project) ----
+.claude/
+
+# ---- OS noise ----
+.DS_Store
